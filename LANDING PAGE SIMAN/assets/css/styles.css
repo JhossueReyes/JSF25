@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+:root{
+    --primario: #d02d37;
+    --r2: #a83338;
+    --secundario: #fff;
+    --fuenteprincipal:'DM Serif Display';
+    --fuentesecundaria:'Rajdhani';
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color:var(--primario);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+h3, h1, h2{
+    font-family: var(--fuenteprincipal);
+}
+p,a{
+    font-family: var(--fuentesecundaria);
+}
+.icono{
+    align-items: right;
+    vertical-align: center;
+    margin-left: auto;
+    
+}
+
+/* Hero Section */
+#hero1 {
+    background-image: url('../images/banner.webp');
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 100px;
+}
+#hero2 {
+    background-image: url('../images/po2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    width: 79.2em;
+    height: 30em; 
+}
+#hero3 {
+    background-image: url('../images/tec.webp');
+    background-size:cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    width: 79em;
+    height: 25em;    
+}
+
+#hero1,#hero2,#hero3, h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero1,#hero2,#hero3, p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.hero-content1{
+    padding-top: 5em ;
+    justify-content: flex;
+    text-emphasis: none;
+    text-align: right;
+    color: white;
+}
+
+
+.cta-button {
+    background-color: var(--primario);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: var(--r2);
+}
+
+/* Secciones Generales */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    font-family:var(--fuenteprincipal) ;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.promo-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promo-item img {
+    width: 70%;
+    height: 286px;
+    object-fit: cover;
+}
+.promo img{
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.promo-item h3 {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.promo-item p {
+    margin: 15px;
+    font-size: 1em;
+    color: #666;
+}
+
+.promo-button {
+    display: inline-block;
+    background-color: var(--primario);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.promo-button:hover {
+    background-color: var(--r2);
+}
+/* Estilos para el Formulario de Contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    font-family: var(--fuentesecundaria);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primario);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--r2);
+}
+#contacto .cta-button {
+    margin-top: 20px;
+    display: inline-block;
+    font-family: var(--fuentesecundaria);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primario);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer .footer-content p {
+    margin: 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #fff;
+}
+
+footer .social-media a img {
+    width: 20px;
+}
+
+/* Media Queries para Responsividad */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero1,#hero2,#hero3, h1 {
+        font-size: 2em;
+    }
+
+    #hero1,#hero2,#hero3 {
+        width: 28em;
+        height: 10em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .promo-item, .promo, h3 {
+        font-size: 1.3em;
+    }
+
+    .promo-item, .promo, p {
+        font-size: 0.9em;
+    }
+    .promo-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .promo img{
+        height: 60%;
+    }
+    .promo-item img{
+        height: 60%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 1024px) {
+    #hero1,#hero2,#hero3, h1 {
+        font-size: 2.1em;
+    }
+
+    #hero1,#hero2,#hero3 {
+        width: 25em;
+    }
+
+    .section h2 {
+        font-size: 1.9em;
+    }
+
+    .promo-item, .promo, h3 {
+        font-size: 1.4em;
+    }
+
+    .promo-item,.promo,  p {
+       
+     font-size: 0.95em;
+    }
+    
+
+    .promo-button {
+        padding: 9px 18px;
+        font-size: 1em;
+    }
+}
+
+/* Dispositivos grandes (escritorio) */
+@media (min-width: 1025px) {
+    .promo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .promo-item img {
+        height: 250px;
+    }
+   
+}
